@@ -1,22 +1,33 @@
+export const metadata = {
+  title: 'Event - Surabayadev',
+  description: 'Page description',
+}
+
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function FeaturesBlocks() {
+
+export default function Event() {
   return (
-    <section className="relative pt-12">
+    <section className="bg-gradient-to-b from-gray-100 to-white">
+      <div className="absolute inset-x-0 -bottom-14 -top-48 overflow-hidden bg-green-50">
+        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white">
+        </div>
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white">
+        </div>
+      </div>
 
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 top-1/4 md:mt-24 lg:mt-0 bg-green-600 pointer-events-none" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-200 transform translate-y-1/2"></div>
+      <div className="container max-w-screen-xl mx-auto px-4 pt-32 pb-12">
+        <section className='relative'>
+          <div className="text-center py-0 lg:py-12">
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20">
+            <h2 className="font-semibold text-gray-900 text-2xl md:text-3xl lg:text-4xl mb-5">Event</h2>
 
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Event Terbaru</h2>
-            <p className="text-xl text-gray-600">Lihat dan ikuti event terbaru dari SurabayaDev</p>
+            <p className="font-normal text-gray-500 text-base md:text-lg lg:text-xl mb-16">List event terbaru Surabayadev</p>
           </div>
+        </section>
+
+        <section className="my-5">
 
           {/* Items */}
           <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-1 items-start md:max-w-2xl lg:max-w-none">
@@ -24,7 +35,7 @@ export default function FeaturesBlocks() {
             {/* 1st item */}
 
             {[1, 2, 3, 4].map((id) => (
-              <div className="relative flex flex-col md:flex-row items-center md:items-start bg-white rounded shadow-xl" key={id}>
+              <div className="relative flex flex-col md:flex-row items-center md:items-start bg-white rounded shadow-xl mb-8" key={id}>
                 <img src="https://eventsurabaya.net/wp-content/uploads/2020/10/MP-ES-Implement-Deisgn-Thinking-In-Product-Development-SurabayaDev-Copy-500-x-500.jpg" alt="" className="md:w-64 sm:w-full h-full object-cover mb-6 md:mb-0 md:mr-6 rounded" />
                 <div className="md:text-left p-4">
 
@@ -60,16 +71,8 @@ export default function FeaturesBlocks() {
               </div>
             ))}
 
-            <div className="text-center mt-7">
-              <a className="btn text-white bg-green-900 hover:bg-gray-800 py-2 px-4 rounded inline-flex items-center" href="#0">
-                <span>
-                  Lihat Selengkapnya
-                </span>
-              </a>
-            </div>
           </div>
-
-        </div>
+        </section>
       </div>
     </section>
   )
