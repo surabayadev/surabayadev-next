@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'Event Detail - Surabayadev',
@@ -24,9 +25,9 @@ export default function EventDetail() {
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio maxime nisi ad consequuntur, illo sint non quo unde, necessitatibus aperiam libero minus voluptas minima ducimus nostrum excepturi alias est aut ipsum quos sapiente repudiandae expedita. Omnis iure laboriosam eligendi, illo dolorem impedit error, sapiente laborum possimus quis quos nulla id?
               </p>
             </div>
-            <a className="inline-flex justify-center rounded-2xl bg-green-600 p-4 text-base font-semibold text-white hover:bg-green-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500 active:text-white/70 mt-10 w-full" href="/#">
+            <Link className="inline-flex justify-center rounded-2xl bg-green-600 p-4 text-base font-semibold text-white hover:bg-green-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500 active:text-white/70 mt-10 w-full" href="/#">
               Daftar
-            </a>
+            </Link>
             <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
               <div>
                 <dt className="font-mono text-sm text-green-600">Peserta
@@ -81,7 +82,7 @@ export default function EventDetail() {
               <div className="grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 whitespace-nowrap px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left" role="tablist" aria-orientation="vertical">
                 <div className="relative lg:pl-8">
                   <svg aria-hidden="true" viewBox="0 0 6 6" className="absolute left-[-0.5px] top-[0.5625rem] hidden h-1.5 w-1.5 overflow-visible lg:block fill-green-600 stroke-green-600">
-                    <path d="M3 0L6 3L3 6L0 3Z" stroke-width="2" stroke-linejoin="round"></path>
+                    <path d="M3 0L6 3L3 6L0 3Z" strokeWidth="2" stroke-linejoin="round"></path>
                   </svg>
                   <div className="relative">
                     <div className="font-mono text-sm text-green-600">
