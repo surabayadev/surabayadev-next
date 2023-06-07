@@ -1,14 +1,14 @@
 'use client';
 
 import Image from 'next/image'
-import TestimonialImage from '@/public/images/testimonial.jpg'
-
 // Import Swiper React components
-import { Navigation, Pagination } from 'swiper';
+import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
+import TestimonialImage from '~/images/testimonial.jpg'
 
 export default function Testimonials() {
   return (

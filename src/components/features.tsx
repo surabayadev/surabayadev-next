@@ -1,10 +1,11 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
-import FeaturesBg from '@/public/images/features-bg.png'
-import FeaturesElement from '@/public/images/features-element.png'
+import { useEffect, useRef, useState } from 'react'
+
+import FeaturesBg from '~/images/features-bg.png'
+import FeaturesElement from '~/images/features-element.png'
 
 export default function Features() {
 
@@ -49,7 +50,7 @@ export default function Features() {
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3  bg-white shadow-md border-gray-200 hover:shadow-lg border-transparent`}
+                  className="flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3  bg-white shadow-md border-gray-200 hover:shadow-lg border-transparent"
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Workshop & Pelatihan IT</div>
@@ -62,7 +63,7 @@ export default function Features() {
                   </div>
                 </a>
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3  bg-white shadow-md border-gray-200 hover:shadow-lg border-transparent`}
+                  className="flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3  bg-white shadow-md border-gray-200 hover:shadow-lg border-transparent"
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Gathering</div>
@@ -75,7 +76,7 @@ export default function Features() {
                   </div>
                 </a>
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 bg-white shadow-md border-gray-200 hover:shadow-lg border-transparent`}
+                  className="flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 bg-white shadow-md border-gray-200 hover:shadow-lg border-transparent"
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Pengabdian Sosial</div>

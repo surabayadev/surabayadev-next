@@ -1,5 +1,6 @@
-import VideoThumb from '@/public/images/sbydev-team.png'
 import ModalVideo from '@/components/modal-video'
+
+import VideoThumb from '~/images/sbydev-team.png'
 
 export default function Hero() {
   return (

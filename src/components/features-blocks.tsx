@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function FeaturesBlocks() {
@@ -24,11 +23,8 @@ export default function FeaturesBlocks() {
             {/* 1st item */}
 
             {[1, 2, 3, 4].map((id) => (
-              <div className="relative flex flex-col md:flex-row items-center md:items-start bg-white rounded shadow-xl" key={id}>
-                <Image
-                  width={100}
-                  height={100}
-                  src="https://eventsurabaya.net/wp-content/uploads/2020/10/MP-ES-Implement-Deisgn-Thinking-In-Product-Development-SurabayaDev-Copy-500-x-500.jpg" alt="" className="md:w-64 sm:w-full h-full object-cover mb-6 md:mb-0 md:mr-6 rounded" />
+              <div className="relative flex flex-col md:flex-row items-center md:items-start bg-white rounded shadow-xl">
+                <img src="https://eventsurabaya.net/wp-content/uploads/2020/10/MP-ES-Implement-Deisgn-Thinking-In-Product-Development-SurabayaDev-Copy-500-x-500.jpg" alt="" className="md:w-64 sm:w-full h-full object-cover mb-6 md:mb-0 md:mr-6 rounded" />
                 <div className="md:text-left p-4">
 
                   <div>
