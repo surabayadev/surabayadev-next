@@ -82,7 +82,7 @@ export default function EventDetail() {
               <div className="grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 whitespace-nowrap px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left" role="tablist" aria-orientation="vertical">
                 <div className="relative lg:pl-8">
                   <svg aria-hidden="true" viewBox="0 0 6 6" className="absolute left-[-0.5px] top-[0.5625rem] hidden h-1.5 w-1.5 overflow-visible lg:block fill-green-600 stroke-green-600">
-                    <path d="M3 0L6 3L3 6L0 3Z" strokeWidth="2" stroke-linejoin="round"></path>
+                    <path d="M3 0L6 3L3 6L0 3Z" strokeWidth="2" strokeLinejoin="round"></path>
                   </svg>
                   <div className="relative">
                     <div className="font-mono text-sm text-green-600">
