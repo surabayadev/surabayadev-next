@@ -4,7 +4,7 @@ const nextConfig = {
     dirs: ['src'],
   },
   images: {
-    domains: ['images.unsplash.com', 'media.licdn.com', 'shorturl.at', 'eventsurabaya.net'],
+    domains: ['images.unsplash.com', 'media.licdn.com', 'shorturl.at', 'eventsurabaya.net', 'iili.io'],
   },
 
   reactStrictMode: true,
@@ -32,6 +32,7 @@ const nextConfig = {
         },
       ],
     });
+    
 
     return config;
   },
