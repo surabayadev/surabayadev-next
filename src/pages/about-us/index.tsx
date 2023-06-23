@@ -4,6 +4,7 @@ import Layout from '@/components/layout/Layout';
 
 import galery from './galery';
 import teams from './teams';
+import Head from 'next/head';
 // import { useState } from "react";
 
 export default function AboutUs() {
@@ -12,6 +13,9 @@ export default function AboutUs() {
   return (
     <Layout>
 
+      <Head>
+        <title>About Us</title>
+      </Head>
       <section className="bg-gradient-to-b from-gray-100 to-white">
         <div className="absolute inset-x-0 -bottom-80 lg:-bottom-14 -top-48 overflow-hidden bg-green-50">
           <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white"></div>
@@ -38,9 +42,9 @@ export default function AboutUs() {
                 <div className="text-center mb-20 lg:mb-0">
                   <div className="flex justify-center mb-5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"  stroke="#3B82F6"
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" stroke="#3B82F6"
                         strokeWidth="1.5"
-                        />
+                      />
                     </svg>
                   </div>
 
@@ -49,7 +53,7 @@ export default function AboutUs() {
                   </h3>
 
                   <p className="font-normal text-gray-500 text-sm lg:text-base px-12">
-                   Memperluas relasi melalui komunitas untuk menjalin kebermanfaatan.
+                    Memperluas relasi melalui komunitas untuk menjalin kebermanfaatan.
                   </p>
                 </div>
               </div>
@@ -68,24 +72,24 @@ export default function AboutUs() {
                   </h3>
 
                   <p className="font-normal text-gray-500 text-sm lg:text-base px-10">
-                   Menjadi wadah yang tepat untuk bisa saling berbagi ilmu, pengalaman maupun wawasantentang update teknologi.
+                    Menjadi wadah yang tepat untuk bisa saling berbagi ilmu, pengalaman maupun wawasantentang update teknologi.
                   </p>
                 </div>
               </div>
               <div className="card">
                 <div className="text-center mb-20 lg:mb-0">
                   <div className="flex justify-center mb-5">
-                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"  stroke="#3B82F6"/>
-                  </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" stroke="#3B82F6" />
+                    </svg>
                   </div>
 
                   <h3 className="font-medium text-gray-900 text-lg lg:text-xl mb-2">
-                   Wadah Belajar
+                    Wadah Belajar
                   </h3>
 
                   <p className="font-normal text-gray-500 text-sm lg:text-base px-10">
-                   Menjadi wadah belajar pegiat IT untuk bisa terus update mengenai tech industry saat ini.
+                    Menjadi wadah belajar pegiat IT untuk bisa terus update mengenai tech industry saat ini.
                   </p>
                 </div>
               </div>
@@ -95,18 +99,19 @@ export default function AboutUs() {
           {/* Gallery */}
           <section className="relative">
             <div className="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 lg:grid lg:grid-cols-3">
-                {galery.map((item) => (
-              <div className="w-full rounded hover:shadow-2xl flex items-center" key={item.details}>
-                <Image
-                  src={item.image}
-                  alt="image"
-                  width={100}
-                  height={100}
-                  sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
-                />
-              </div>
-                ))}
+              {galery.map((item) => (
+                <div className="w-full rounded hover:shadow-2xl flex items-center" key={item.details}>
+                  {/* <Image
+                    src={item.image}
+                    alt="image"
+                    width={100}
+                    height={100}
+                    sizes="100vw"
+                    style={{ width: '100%', height: 'auto' }}
+                  /> */}
+                  <img src={item.image} alt="image" className="w-full h-full object-cover" />
+                </div>
+              ))}
             </div>
           </section>
 
@@ -118,7 +123,7 @@ export default function AboutUs() {
                   Teams
                 </h2>
               </div>
-              <div className="grid grid-cols md:grid-cols-4 gap-4">
+              <div className="grid grid-cols md:grid-cols-5 gap-4">
                 {teams.map((team) => (
                   <div className="flex flex-col border rounded-lg overflow-hidden bg-white" key={team.name}>
                     <Image
@@ -128,16 +133,14 @@ export default function AboutUs() {
                       className="object-fill hover:opacity-70"
                       alt={team.name + ' ' + team.role}
                     />
-                    <div className="flex flex-col p-2 pb-6">
-                      <div className="flex justify-start">
+                    <div className="flex flex-column p-2 pb-6">
+                      <div className="flex flex-col flex-grow pt-3 text-center">
                         <a
                           href={team.linkedin}
-                          className="text-lg mb-4 font-medium hover:underline hover:opacity-70 line-clamp-2  text-green-600">
+                          className="text-md mb-0 font-medium hover:opacity-70 line-clamp-2  text-green-600 hover:font-medium">
                           {team.name}
                         </a>
-                      </div>
-                      <div className="flex flex-col items-start space-y-2 text-sm">
-                        <span className="flex items-center gap-2">
+                        <span className="text-sm">
                           <span>{team.role}</span>
                         </span>
                       </div>
