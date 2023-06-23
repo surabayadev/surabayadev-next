@@ -33,19 +33,19 @@ const teams = [
   {
     image: 'https://shorturl.at/uvUYZ',
     name: 'Yusup Maulana',
-    role: 'Division Logistic',
+    role: 'Logistic Division',
     linkedin: 'https://www.linkedin.com/in/yusupmaulana/',
   },
   {
     image: 'https://shorturl.at/dyKWY',
-    name: 'Mochammad Miftahul Huda Firmansyah',
-    role: 'Core Team',
+    name: 'Miftahul Huda',
+    role: 'R&D Division',
     linkedin: 'https://www.linkedin.com/in/iniakunhuda/',
   },
   {
     image: 'https://shorturl.at/cQSZ7',
     name: 'Puspa Rinjeni',
-    role: 'Event Planner',
+    role: 'Event Division',
     linkedin: 'https://www.linkedin.com/in/puspa-rinjeni-31186411a/',
   },
 ];
