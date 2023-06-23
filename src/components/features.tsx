@@ -5,6 +5,9 @@ import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 
 import FeaturesBg from '~/images/features-bg.png'
+import FeaturesBgOne from '~/images/features-bg-one.jpeg'
+import FeaturesBgTwo from '~/images/features-bg-two.jpeg'
+import FeaturesBgThree from '~/images/features-bg-three.jpeg'
 import FeaturesElement from '~/images/features-element.png'
 
 export default function Features() {
@@ -181,8 +184,8 @@ export default function Features() {
                   leaveTo="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-                    <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBgOne} width={500} height="462" alt="Features bg" />
+                    {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -198,8 +201,8 @@ export default function Features() {
                   leaveTo="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-                    <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBgTwo} width={500} height="462" alt="Features bg" />
+                    {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                   </div>
                 </Transition>
                 {/* Item 3 */}
@@ -215,8 +218,8 @@ export default function Features() {
                   leaveTo="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-                    <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBgThree} width={500} height="462" alt="Features bg" />
+                    {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
                   </div>
                 </Transition>
               </div>
