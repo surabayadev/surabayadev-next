@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 import Layout from '@/components/layout/Layout';
 
-import galery from './galery';
-import teams from './teams';
 import Head from 'next/head';
+import galery from '@/api/galery';
+import teams from '@/api/teams';
 // import { useState } from "react";
 
 export default function AboutUs() {
