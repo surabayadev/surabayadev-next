@@ -6,20 +6,28 @@ import Hero from '@/components/Hero';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 import Testimonials from '@/components/Testimonials';
+import event_list from '@/api/event_list';
+import { Event } from '@/types/event';
 
-/**
- * SVGR Support
- * Caveat: No React Props Type.
- *
- * You can override the next-env if the type is important to you
- * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
- */
 
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
+export async function getStaticProps() {
+  const response = await fetch("https://www.eventbriteapi.com/v3/organizations/54649742978/events/?order_by=start_desc&page_size=3", {
+    headers: {
+      'Authorization': 'Bearer 3KRZDGMP2VHUUVW2XHCG'
+    }
+  });
+  const result = await response.json()
+  const posts = result.events;
 
-export default function HomePage() {
+  return {
+    props: {
+      posts,
+    },
+  }
+}
+
+
+export default function HomePage({ posts }: { posts: Event[] }) {
   return (
     <Layout>
       {/* <Seo templateTitle='Home' /> */}
@@ -27,7 +35,7 @@ export default function HomePage() {
 
       <Hero />
       <Features />
-      <FeaturesBlocks />
+      <FeaturesBlocks posts={posts} />
       <Testimonials />
     </Layout>
   );

@@ -9,7 +9,7 @@ const HeaderTitle = [
   },
   {
     title: 'Blog',
-    link: '/blog',
+    link: 'https://medium.com/surabayadev',
   },
 ];
 

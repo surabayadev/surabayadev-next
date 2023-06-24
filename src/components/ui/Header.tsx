@@ -5,8 +5,8 @@ import { useEffect, useState } from 'react';
 
 import Logo from '@/components/ui/Logo';
 import MobileMenu from '@/components/ui/MobileMenu';
-
 import HeaderTitle from './HeaderTitle';
+
 
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
