@@ -1,4 +1,4 @@
-const headerTitle = [
+const HeaderTitle = [
   {
     title: 'About Us',
     link: '/about-us',
@@ -13,4 +13,4 @@ const headerTitle = [
   },
 ];
 
-export default headerTitle;
+export default HeaderTitle;
