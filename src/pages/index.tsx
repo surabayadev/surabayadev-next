@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Features from '@/components/Features';
-import FeaturesBlocks from '@/components/Features-Blocks';
+import FeaturesBlocks from '@/components/FeaturesBlocks';
 import Hero from '@/components/Hero';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
