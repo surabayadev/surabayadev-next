@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-import Features from '@/components/features';
-import FeaturesBlocks from '@/components/features-blocks';
+import Features from '@/components/Features';
+import FeaturesBlocks from '@/components/Features-Blocks';
 import Hero from '@/components/Hero';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
-import Testimonials from '@/components/testimonials';
+import Testimonials from '@/components/Testimonials';
 import event_list from '@/api/event_list';
 import { Event } from '@/types/event';
 
