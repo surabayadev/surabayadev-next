@@ -7,6 +7,7 @@ import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 import Testimonials from '@/components/testimonials';
 import event_list from '@/api/event_list';
+import { Event } from '@/types/event';
 
 
 export async function getStaticProps() {
@@ -26,7 +27,7 @@ export async function getStaticProps() {
 }
 
 
-export default function HomePage({ posts }) {
+export default function HomePage({ posts }: { posts: Event[] }) {
   return (
     <Layout>
       {/* <Seo templateTitle='Home' /> */}

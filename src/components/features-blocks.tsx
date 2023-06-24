@@ -1,8 +1,9 @@
 import event_list from '@/api/event_list';
+import { Event } from '@/types/event';
 import Link from 'next/link'
 
 
-export default function FeaturesBlocks({ posts }) {
+export default function FeaturesBlocks({ posts }: { posts: Event[] }) {
   return (
     <section className="relative pt-12">
 
