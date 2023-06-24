@@ -5,8 +5,8 @@ import { useEffect, useState } from 'react';
 
 import Logo from '@/components/ui/Logo';
 import MobileMenu from '@/components/ui/MobileMenu';
+import HeaderTitle from './HeaderTitle';
 
-import headerTitle from './headerTitle';
 
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
@@ -37,7 +37,7 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
-              {headerTitle.map((item) => (
+              {HeaderTitle.map((item) => (
                 <li key={item.title}>
                   <Link
                     href={item.link}

@@ -4,7 +4,7 @@ import { Transition } from '@headlessui/react';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
-import headerTitle from '@/components/ui/headerTitle';
+import HeaderTitle from '@/components/ui/HeaderTitle';
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
@@ -72,7 +72,7 @@ export default function MobileMenu() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0">
           <ul className="px-5 py-2">
-            {headerTitle.map((item) => (
+            {HeaderTitle.map((item) => (
               <li key={item.link}>
                 <Link
                   href={item.link}

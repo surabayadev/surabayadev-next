@@ -1,4 +1,4 @@
-const footerTitle = [
+const FooterTitle = [
   {
     text: 'Twitter',
     link: 'https://twitter.com/surabayadev',
@@ -19,4 +19,4 @@ const footerTitle = [
   },
 ];
 
-export default footerTitle;
+export default FooterTitle;
