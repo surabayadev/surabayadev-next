@@ -1,4 +1,4 @@
-import ModalVideo from '@/components/modal-video'
+import ModalVideo from '@/components/Modal-Video'
 
 import VideoThumb from '~/images/sbydev-team.png'
 

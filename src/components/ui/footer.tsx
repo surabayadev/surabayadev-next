@@ -1,4 +1,4 @@
-import footerTitle from "@/components/ui/FooterTitle";
+import FooterTitle from "@/components/ui/FooterTitle";
 
 export default function Footer() {
   return (
@@ -111,7 +111,7 @@ export default function Footer() {
         <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200">
           {/* Social as */}
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
-            {footerTitle.map((item) => (
+            {FooterTitle.map((item) => (
               <li className="ml-4" key={item.link}>
                 <a
                   href={item.link}
