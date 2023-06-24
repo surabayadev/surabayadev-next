@@ -11,6 +11,8 @@ import Layout from '@/components/layout/Layout';
 import { eventbriteAPIKey } from '@/constant/env';
 import Head from 'next/head';
 import event_list from '@/api/event_list';
+import { Event } from '@/types/event';
+
 
 export async function getStaticProps() {
   const API_URL = "https://www.eventbriteapi.com/v3/organizations/54649742978/events?order_by=start_desc";
@@ -30,7 +32,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Event({ posts }) {
+export default function Event({ posts }: { posts: Event[] }) {
   return (
     <Layout>
       <Head>
