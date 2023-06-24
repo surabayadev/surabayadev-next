@@ -4,7 +4,7 @@ const nextConfig = {
     dirs: ['src'],
   },
   images: {
-    domains: ['images.unsplash.com', 'media.licdn.com', 'shorturl.at', 'eventsurabaya.net', 'iili.io'],
+    domains: ['images.unsplash.com', 'media.licdn.com', 'shorturl.at', 'eventsurabaya.net', 'iili.io', 'img.evbuc.com', 'lh3.googleusercontent.com'],
   },
   async headers() {
     return [

@@ -101,15 +101,13 @@ export default function AboutUs() {
             <div className="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 lg:grid lg:grid-cols-3">
               {galery.map((item) => (
                 <div className="w-full rounded hover:shadow-2xl flex items-center" key={item.details}>
-                  {/* <Image
+                  <Image
                     src={item.image}
                     alt="image"
-                    width={100}
-                    height={100}
-                    sizes="100vw"
-                    style={{ width: '100%', height: 'auto' }}
-                  /> */}
-                  <img src={item.image} alt="image" className="w-full h-full object-cover" />
+                    width={500}
+                    height={500} className="w-full h-full object-cover"
+                  />
+                  {/* <img src={item.image} alt="image" /> */}
                 </div>
               ))}
             </div>

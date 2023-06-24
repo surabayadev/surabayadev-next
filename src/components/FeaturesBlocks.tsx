@@ -1,6 +1,7 @@
 import event_list from '@/api/event_list';
 import { Event } from '@/types/event';
 import Link from 'next/link'
+import Image from 'next/image';
 
 
 export default function FeaturesBlocks({ posts }: { posts: Event[] }) {
@@ -27,14 +28,15 @@ export default function FeaturesBlocks({ posts }: { posts: Event[] }) {
 
             {posts.map((post) => (
               <div key={post.id} className="relative flex flex-col md:flex-row items-center md:items-start bg-white rounded shadow-xl mb-8">
-                <div className="basis-2/5">
-                  <img src={(post.logo != null) ? post.logo.original.url : 'https://iili.io/HPGls5u.md.png'}
+                <div className="basis-2/5 md:h-72">
+                  <Image src={(post.logo != null) ? post.logo.original.url : 'https://iili.io/HPGls5u.md.png'}
                     alt="Poster Image"
-                    className="sm:w-full h-full object-cover mb-6 md:mb-0 md:mr-6 rounded"
+                    width={500}
+                    height={500}
                     style={{
                       width: '100%',
                       objectFit: 'cover',
-                      height: '300px',
+                      height: '100%',
                     }}
                   />
                 </div>
