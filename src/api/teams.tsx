@@ -48,6 +48,18 @@ const teams = [
     role: 'Event Division',
     linkedin: 'https://www.linkedin.com/in/puspa-rinjeni-31186411a/',
   },
+  {
+    image: 'https://shorturl.at/movwL',
+    name: 'Mulia Hartawan Negara',
+    role: 'Event Manager',
+    linkedin: 'https://www.linkedin.com/in/muliahartawan/',
+  },
+  {
+    image: 'https://shorturl.at/vIL13',
+    name: 'Achmada Fiqri A Rasyad',
+    role: 'Member',
+    linkedin: 'https://www.linkedin.com/in/fiqriachmada/',
+  },
 ];
 
 export default teams;
