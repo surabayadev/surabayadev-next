@@ -120,11 +120,11 @@ export default function FeaturesBlocks({ posts }: { posts: Event[] }) {
             ))}
 
             <div className="text-center mt-7">
-              <a className="btn text-white bg-green-900 hover:bg-gray-800 py-2 px-4 rounded inline-flex items-center" href="#0">
+              <Link className="btn text-white bg-green-900 hover:bg-gray-800 py-2 px-4 rounded inline-flex items-center" href="/event">
                 <span>
                   Lihat Selengkapnya
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
 

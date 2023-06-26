@@ -1,9 +1,9 @@
-import FooterTitle from "@/components/ui/FooterTitle";
+import FooterTitle from '@/components/ui/FooterTitle';
 
 export default function Footer() {
   return (
     <footer>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className='mx-auto max-w-6xl px-4 sm:px-6'>
         {/* Top area: Blocks */}
         {/* <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200"> */}
 
@@ -108,19 +108,20 @@ export default function Footer() {
         </div> */}
 
         {/* Bottom area */}
-        <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200">
+        <div className='border-t border-gray-200 py-4 md:flex md:items-center md:justify-between md:py-8'>
           {/* Social as */}
-          <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
+          <ul className='mb-4 flex md:order-1 md:mb-0 md:ml-4'>
             {FooterTitle.map((item) => (
-              <li className="ml-4" key={item.link}>
+              <li className='ml-4' key={item.link}>
                 <a
                   href={item.link}
-                  className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
-                  aria-label={item.text}>
+                  className=' flex items-center justify-center rounded-full bg-white text-gray-600 shadow transition duration-150 ease-in-out hover:bg-gray-600 hover:text-gray-900 hover:text-white'
+                  aria-label={item.text}
+                >
                   <svg
-                    className="w-8 h-8 fill-current"
-                    viewBox="0 0 32 32"
-                  // xmlns="http://www.w3.org/2000/svg"
+                    className='h-8 w-8 fill-current'
+                    viewBox='0 0 32 32'
+                    // xmlns="http://www.w3.org/2000/svg"
                   >
                     <path d={item.svgPatch} />
                   </svg>
@@ -130,7 +131,7 @@ export default function Footer() {
           </ul>
 
           {/* Copyrights note */}
-          <div className="text-sm text-gray-600 mr-4">
+          <div className='mr-4 text-sm text-gray-600'>
             &copy; {new Date().getFullYear()} SurabayaDev. All rights reserved.
           </div>
         </div>
