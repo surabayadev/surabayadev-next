@@ -67,12 +67,6 @@ const teams = [
     linkedin: 'https://www.linkedin.com/in/musaalfarid77/',
   },
   {
-    image: 'https://shorturl.at/movwL',
-    name: 'Mulia Hartawan Negara',
-    role: 'Event Manager',
-    linkedin: 'https://www.linkedin.com/in/muliahartawan/',
-  },
-  {
     image: 'https://shorturl.at/vIL13',
     name: 'Achmada Fiqri A Rasyad',
     role: 'Member',
