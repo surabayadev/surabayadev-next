@@ -31,6 +31,12 @@ const teams = [
       'https://www.linkedin.com/in/putra-wahyu-utama-istianto-5a9966171/',
   },
   {
+    image: 'https://shorturl.at/cQSZ7',
+    name: 'Puspa Rinjeni',
+    role: 'Event Division',
+    linkedin: 'https://www.linkedin.com/in/puspa-rinjeni-31186411a/',
+  },
+  {
     image: 'https://shorturl.at/uvUYZ',
     name: 'Yusup Maulana',
     role: 'Logistic Division',
@@ -43,10 +49,22 @@ const teams = [
     linkedin: 'https://www.linkedin.com/in/iniakunhuda/',
   },
   {
-    image: 'https://shorturl.at/cQSZ7',
-    name: 'Puspa Rinjeni',
-    role: 'Event Division',
-    linkedin: 'https://www.linkedin.com/in/puspa-rinjeni-31186411a/',
+    image: 'https://shorturl.at/AJYZ1',
+    name: 'Mulia Hartawan Negara',
+    role: 'Event Manager',
+    linkedin: 'https://www.linkedin.com/in/muliahartawan/',
+  },
+  {
+    image: 'https://shorturl.at/aioqt',
+    name: 'Aprilian Lisa',
+    role: 'Design Division',
+    linkedin: 'https://www.linkedin.com/in/aprilianlisam/',
+  },
+  {
+    image: 'https://shorturl.at/fiwE2',
+    name: 'Musa Al Farid',
+    role: 'Design Division',
+    linkedin: 'https://www.linkedin.com/in/musaalfarid77/',
   },
 ];
 
