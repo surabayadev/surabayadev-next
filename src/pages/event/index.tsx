@@ -1,18 +1,34 @@
-import { useState } from 'react';
 export const metadata = {
   title: 'Event - Surabayadev',
   description: 'Page description',
 };
 
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import Layout from '@/components/layout/Layout';
-import { eventbriteAPIKey } from '@/constant/env';
-import Head from 'next/head';
-import event_list from '@/api/event_list';
+
 import { Event } from '@/types/event';
 
+
+// export async function getStaticProps() {
+//   const API_URL = "https://www.eventbriteapi.com/v3/organizations/54649742978/events?order_by=start_desc";
+//   const response = await fetch(API_URL, {
+//     headers: {
+//       'Authorization': 'Bearer 3KRZDGMP2VHUUVW2XHCG',
+//     }
+//   });
+//   const result = await response.json()
+//   const posts = result.events;
+
+
+//   return {
+//     props: {
+//       posts,
+//     },
+//   }
+// }
 
 export async function getStaticProps() {
   const API_URL = "https://www.eventbriteapi.com/v3/organizations/54649742978/events?order_by=start_desc";
@@ -21,15 +37,15 @@ export async function getStaticProps() {
       'Authorization': 'Bearer 3KRZDGMP2VHUUVW2XHCG',
     }
   });
-  const result = await response.json()
+  const result = await response.json();
   const posts = result.events;
-
 
   return {
     props: {
       posts,
     },
-  }
+    revalidate: 60 * 60,
+  };
 }
 
 export default function Event({ posts }: { posts: Event[] }) {
