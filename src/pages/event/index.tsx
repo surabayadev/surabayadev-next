@@ -49,6 +49,7 @@ export async function getStaticProps() {
 }
 
 export default function Event({ posts }: { posts: Event[] }) {
+  console.log('posts', posts)
   return (
     <Layout>
       <Head>
