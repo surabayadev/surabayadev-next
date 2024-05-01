@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function FeaturesBlocks({ posts }: { posts: Event[] }) {
-  console.log('posts', posts)
   return (
     <section className='relative pt-12'>
       {/* Section background (needs .relative class on parent and next sibling elements) */}

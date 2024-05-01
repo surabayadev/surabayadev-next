@@ -134,10 +134,10 @@ export default function AboutUs() {
           {/* Gallery */}
           <section className='relative'>
             <div className='container mx-auto space-y-2 lg:grid lg:grid-cols-3 lg:gap-2 lg:space-y-0'>
-              {galery.map((item) => (
+              {galery.map((item, index) => (
                 <div
                   className='flex w-full items-center rounded hover:shadow-2xl'
-                  key={item.details}
+                  key={index}
                 >
                   <Image
                     src={item.image}
@@ -145,6 +145,7 @@ export default function AboutUs() {
                     width={500}
                     height={500}
                     className='h-full w-full object-cover'
+                    priority={true}
                   />
                   {/* <img src={item.image} alt="image" /> */}
                 </div>
