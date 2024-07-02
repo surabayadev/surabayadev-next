@@ -1,4 +1,3 @@
-import event_list from '@/api/event_list';
 import { Event } from '@/types/event';
 import Link from 'next/link';
 import Image from 'next/image';

@@ -6,7 +6,7 @@ const defaultMeta = {
   title: 'SurabayaDev',
   siteName: 'SurabayaDev',
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
+    'SurabayaDev is a community for developers in Surabaya. We are a group of developers who are passionate about technology and programming. We are here to share knowledge, learn together, and build a strong community.',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
   url: 'https://surabayadev.org',
   type: 'website',

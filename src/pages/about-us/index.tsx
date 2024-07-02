@@ -1,14 +1,12 @@
+import Head from 'next/head';
 import Image from 'next/image';
 
 import Layout from '@/components/layout/Layout';
+import TeamsSection from './components/teams_section';
 
-import Head from 'next/head';
 import galery from '@/api/galery';
-import teams from '@/api/teams';
-// import { useState } from "react";
 
 export default function AboutUs() {
-  // const [tab, setTab] = useState<number>(1);
 
   return (
     <Layout>
@@ -154,44 +152,7 @@ export default function AboutUs() {
           </section>
 
           {/* Teams */}
-          <section>
-            <div className='container mx-auto'>
-              <div className='py-12 text-center lg:py-24'>
-                <h2 className='mb-5 text-2xl font-semibold text-gray-900 md:text-3xl lg:text-4xl'>
-                  Teams
-                </h2>
-              </div>
-              <div className='grid-cols grid gap-4 md:grid-cols-5'>
-                {teams.map((team) => (
-                  <div
-                    className='flex flex-col overflow-hidden rounded-lg border bg-white hover:shadow-xl'
-                    key={team.name}
-                  >
-                    <Image
-                      src={team.image}
-                      width={400}
-                      height={400}
-                      className='object-fill hover:opacity-70'
-                      alt={team.name + ' ' + team.role}
-                    />
-                    <div className='flex-column flex p-2 pb-6'>
-                      <div className='flex flex-grow flex-col pt-3 text-center'>
-                        <a
-                          href={team.linkedin}
-                          className='text-md mb-0 line-clamp-2 font-medium text-green-600  hover:font-medium hover:opacity-70'
-                        >
-                          {team.name}
-                        </a>
-                        <span className='text-sm'>
-                          <span>{team.role}</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
+          <TeamsSection />
 
           {/* FAQ */}
           {/* <section>
