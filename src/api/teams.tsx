@@ -146,21 +146,21 @@ const teams: Division[] = [
                 '/images/teams/yudha.jpg',
               name: 'Kurniawan Try Yudha',
               role: 'Software Engineer',
-              linkedin: 'https://www.linkedin.com/in/aprilianlisam/',
+              linkedin: 'https://www.linkedin.com/in/ktyudha/',
         },
         {
               image:
                 '/images/teams/jeffry.jpeg',
               name: 'Michael Jeffry',
               role: 'Software Engineer',
-              linkedin: 'https://www.linkedin.com/in/aprilianlisam/',
+              linkedin: 'https://www.linkedin.com/in/michael-jeffry-setiawan/',
         },
         {
               image:
                 '/images/teams/soni.png',
               name: 'Ahmad Shonhaji',
               role: 'Software Engineer',
-              linkedin: 'https://www.linkedin.com/in/aprilianlisam/',
+              linkedin: 'https://www.linkedin.com/in/ahmadshonhaji/',
         },
     ]
   },
@@ -179,7 +179,7 @@ const teams: Division[] = [
                 '/images/teams/sendhy.jpg',
               name: 'M Alfian Sendhy',
               role: 'Event',
-              linkedin: 'https://www.linkedin.com/in/michael-jeffry-setiawan/',
+              linkedin: 'https://www.linkedin.com/in/sendhyrama/',
         },
         {
               image:
