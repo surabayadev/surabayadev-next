@@ -1,3 +1,5 @@
 # SurabayaDev NextJS
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, recusandae repudiandae! A vitae nam quasi deserunt repudiandae iste facere, assumenda aperiam, laboriosam veniam consequuntur blanditiis inventore? Id eaque eius, voluptas deserunt delectus doloremque dolores odit ipsam ipsum omnis praesentium commodi nihil laborum similique fugit quibusdam cupiditate dicta consequuntur sed soluta non eveniet ratione. Adipisci eveniet neque, aliquam omnis necessitatibus est iure veritatis cupiditate beatae, libero distinctio? Reiciendis magni excepturi amet voluptatum, aliquid minus possimus placeat unde adipisci impedit vel quasi error, quaerat consequatur dolores aspernatur maiores autem! Vel, omnis! Praesentium assumenda doloremque natus sed blanditiis. Doloribus accusamus aperiam inventore nemo.
+
+iure veritatis cupiditate beatae, libero distinctio? Reiciendis magni excepturi amet voluptatum, aliquid minus possimus placeat unde adipisci impedit vel quasi error, quaerat consequatur dolores aspernatur maiores autem! Vel, omnis! Praesentium assumenda doloremque natus sed blanditiis. Doloribus accusamus aperiam inventore nemo.
