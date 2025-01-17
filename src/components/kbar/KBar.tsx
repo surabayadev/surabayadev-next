@@ -14,6 +14,8 @@ import { navItems } from '@/constant/data';
 import RenderResults from './KBarResults';
 import useThemeSwitching from './useThemeSwitching';
 
+import { NavItem } from '@/types';
+
 export default function KBar({ children }: { children: React.ReactNode }) {
   const router = useRouter();
 
@@ -41,7 +43,7 @@ export default function KBar({ children }: { children: React.ReactNode }) {
 
         // Map child items into actions
         const childActions =
-          navItem.items?.map((childItem: { title: string; shortcut: unknown; url: string; }) => ({
+          navItem.items?.map((childItem: NavItem) => ({
             id: `${childItem.title.toLowerCase()}Action`,
             name: childItem.title,
             shortcut: childItem.shortcut,

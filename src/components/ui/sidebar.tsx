@@ -430,11 +430,12 @@ const SidebarGroupLabel = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div"> & { asChild?: boolean }
 >(({ className, asChild = false, ...props }, ref) => {
-  const Comp = asChild ? Slot : "div"
+  // Ensure the `Comp` component supports `ref`.
+  const Comp: React.ElementType = asChild ? Slot : "div";
 
   return (
     <Comp
-      ref={ref}
+      ref={ref as React.Ref<HTMLDivElement>} // Ensure proper typing for `ref`
       data-sidebar="group-label"
       className={cn(
         "duration-200 flex h-8 shrink-0 items-center rounded-md px-2 text-xs font-medium text-sidebar-foreground/70 outline-none ring-sidebar-ring transition-[margin,opa] ease-linear focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
@@ -443,19 +444,20 @@ const SidebarGroupLabel = React.forwardRef<
       )}
       {...props}
     />
-  )
-})
-SidebarGroupLabel.displayName = "SidebarGroupLabel"
+  );
+});
+SidebarGroupLabel.displayName = "SidebarGroupLabel";
 
 const SidebarGroupAction = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<"button"> & { asChild?: boolean }
 >(({ className, asChild = false, ...props }, ref) => {
-  const Comp = asChild ? Slot : "button"
+  // Define the component type dynamically
+  const Comp: React.ElementType = asChild ? Slot : "button";
 
   return (
     <Comp
-      ref={ref}
+      ref={ref as React.Ref<HTMLButtonElement>} // Ensure correct typing for `ref`
       data-sidebar="group-action"
       className={cn(
         "absolute right-3 top-3.5 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground outline-none ring-sidebar-ring transition-transform hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
@@ -466,9 +468,10 @@ const SidebarGroupAction = React.forwardRef<
       )}
       {...props}
     />
-  )
-})
-SidebarGroupAction.displayName = "SidebarGroupAction"
+  );
+});
+
+SidebarGroupAction.displayName = "SidebarGroupAction";
 
 const SidebarGroupContent = React.forwardRef<
   HTMLDivElement,
@@ -551,19 +554,19 @@ const SidebarMenuButton = React.forwardRef<
     },
     ref
   ) => {
-    const Comp = asChild ? Slot : "button"
-    const { isMobile, state } = useSidebar()
-
+    const Comp: React.ElementType = asChild ? Slot : "button";
+    const { isMobile, state } = useSidebar();
+    
     const button = (
       <Comp
-        ref={ref}
+        ref={ref as React.Ref<HTMLButtonElement>} // Ensure proper typing for ref
         data-sidebar="menu-button"
         data-size={size}
         data-active={isActive}
         className={cn(sidebarMenuButtonVariants({ variant, size }), className)}
         {...props}
       />
-    )
+    );    
 
     if (!tooltip) {
       return button
@@ -597,11 +600,11 @@ const SidebarMenuAction = React.forwardRef<
     showOnHover?: boolean
   }
 >(({ className, asChild = false, showOnHover = false, ...props }, ref) => {
-  const Comp = asChild ? Slot : "button"
+  const Comp: React.ElementType = asChild ? Slot : "button";
 
   return (
     <Comp
-      ref={ref}
+      ref={ref as React.Ref<HTMLButtonElement>} // Ensure proper ref typing
       data-sidebar="menu-action"
       className={cn(
         "absolute right-1 top-1.5 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground outline-none ring-sidebar-ring transition-transform hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 peer-hover/menu-button:text-sidebar-accent-foreground [&>svg]:size-4 [&>svg]:shrink-0",
@@ -617,7 +620,7 @@ const SidebarMenuAction = React.forwardRef<
       )}
       {...props}
     />
-  )
+  );  
 })
 SidebarMenuAction.displayName = "SidebarMenuAction"
 
@@ -711,11 +714,11 @@ const SidebarMenuSubButton = React.forwardRef<
     isActive?: boolean
   }
 >(({ asChild = false, size = "md", isActive, className, ...props }, ref) => {
-  const Comp = asChild ? Slot : "a"
+  const Comp: React.ElementType = asChild ? Slot : "a";
 
   return (
     <Comp
-      ref={ref}
+      ref={ref as React.Ref<HTMLAnchorElement>} // Ensure correct typing for `ref`
       data-sidebar="menu-sub-button"
       data-size={size}
       data-active={isActive}
@@ -729,7 +732,7 @@ const SidebarMenuSubButton = React.forwardRef<
       )}
       {...props}
     />
-  )
+  );  
 })
 SidebarMenuSubButton.displayName = "SidebarMenuSubButton"
 

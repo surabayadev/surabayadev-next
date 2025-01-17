@@ -48,6 +48,7 @@ import {
 import { navItems } from '@/constant/data';
 
 import { Icons } from '../icons';
+import { UrlObject } from 'url';
 
 export const company = {
   name: 'SurabayaDev',
@@ -78,7 +79,7 @@ export default function AppSidebar() {
           <SidebarGroupLabel>Overview</SidebarGroupLabel>
           <SidebarMenu>
             {navItems.map((item) => {
-              const Icon = item.icon ? Icons[item.icon] : Icons.logo;
+              const Icon = item.icon ? Icons[item.icon as keyof typeof Icons] : Icons.logo;
               return item?.items && item?.items?.length > 0 ? (
                 <Collapsible
                   key={item.title}
@@ -99,8 +100,8 @@ export default function AppSidebar() {
                     </CollapsibleTrigger>
                     <CollapsibleContent>
                       <SidebarMenuSub>
-                        {item.items?.map((subItem) => (
-                          <SidebarMenuSubItem key={subItem.title}>
+                        {item.items?.map((subItem: { title: boolean | React.Key | React.ReactElement<unknown, string | React.JSXElementConstructor<unknown>> | React.ReactFragment | React.PromiseLikeOfReactNode | null | undefined; url: string | UrlObject; }) => (
+                          <SidebarMenuSubItem key={String(subItem.title)}>
                             <SidebarMenuSubButton
                               asChild
                               isActive={pathname === subItem.url}
