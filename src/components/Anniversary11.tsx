@@ -6,14 +6,15 @@ import TungkuTani from '~/images/supports/tungkutani.png';
 
 
 export default function Anniversary11() {
-  const canvasRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
     const ctx = canvas.getContext('2d');
-    let animationFrameId;
+    if (!ctx) return;
+    let animationFrameId: number;
     let time = 0;
 
     const resizeCanvas = () => {

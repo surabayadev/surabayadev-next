@@ -1,29 +1,7 @@
 'use client';
 
 import Image from 'next/image'
-// Import Swiper React components
-import { Navigation } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-import TestimonialImage from '~/images/testimonial.jpg'
 import JagoanHostingImage from '~/images/supports/jagoan-hosting.webp'
-import MicrosoftImage from '~/images/supports/microsoft.png'
-import CakapImage from '~/images/supports/cakap.png'
-import DailySocialImage from '~/images/supports/dailysocial.png'
-
-import AlibabaImage from '~/images/supports/compart/alibaba.png'
-import AwsImage from '~/images/supports/compart/aws.png'
-import BackendNgalamImage from '~/images/supports/compart/backendngalam.png'
-import MozillaImage from '~/images/supports/compart/mozilla.png'
-import PasuruanDevImage from '~/images/supports/compart/pasuruandev.png'
-import PatrisDevImage from '~/images/supports/compart/patrisdev.png'
-import KlasImage from '~/images/supports/compart/klas.png'
-import SurabayaJsImage from '~/images/supports/compart/surabayajs.png'
-import Tokped from '~/images/supports/compart/tokped.png'
-import TulungagungImage from '~/images/supports/compart/tulungagungdev.jpg'
 
 
 export default function Testimonials() {
