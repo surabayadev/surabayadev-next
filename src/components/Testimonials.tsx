@@ -50,14 +50,13 @@ export default function Testimonials() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
 
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h2 className="h2 mb-4">Terima kasih telah bekerja sama dengan <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-teal-400">SurabayaDev</span></h2>
             <p className="text-xl text-gray-600" data-aos="zoom-y-out">Kami sangat terbuka apabila kamu ingin berkolaborasi baik itu berupa pemateri, audience, maupun media partner</p>
-          </div>
+          </div> */}
 
           <div className="text-center">
-            <h2 className="h5 mb-6 text-gray-400">Sponsor</h2>
+            <h2 className="h5 mb-6 text-gray-400">Website Supported By</h2>
           </div>
 
           {/* Items */}
@@ -68,103 +67,41 @@ export default function Testimonials() {
               <div>
                 <Image src={JagoanHostingImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400" width="124" height="124" />
               </div>
-              <div className='ml-10'>
-                <Image src={MicrosoftImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400 " width="124" height="124" />
-              </div>
             </div>
 
           </div>
 
 
-          <div className="text-center">
-            <h2 className="h5 mb-6 text-gray-400">Media Partner</h2>
-          </div>
-
-          {/* Items */}
-          <div className="max-w-sm md:max-w-4xl mx-auto mb-20">
-
-            {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <div>
-                <Image src={CakapImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400" width="124" height="124" />
-              </div>
-              <div className='ml-10'>
-                <Image src={DailySocialImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400 " width="124" height="124" />
-              </div>
-            </div>
-
-          </div>
-
-
-          <div className="text-center">
+          {/* <div className="text-center">
             <h2 className="h5 mb-6 text-gray-400">Community Partner</h2>
           </div>
 
-          {/* Items */}
-          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4 md:grid-cols-5  mb-0">
-            {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <Image src={AlibabaImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400" width="124" height="124" />
-            </div>
-
-            {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <Image src={AwsImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400" width="80" height="80" />
-
-            </div>
-
-            {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <Image src={MozillaImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400" width="124" height="124" />
-
-            </div>
-
-            {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <Image src={Tokped} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400" width="124" height="124" />
-
-            </div>
-
-            {/* Item */}
-            <div className="flex items-center justify-center py-2 col-span-2 md:col-auto col-start-2 col-end-4">
-              <Image src={BackendNgalamImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400" width="124" height="124" />
-
-            </div>
-
-          </div>
-
-          {/* Items */}
           <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4 md:grid-cols-5  mb-20">
-            {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
               <Image src={SurabayaJsImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400" width="124" height="124" />
             </div>
 
-            {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
               <Image src={PasuruanDevImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400" width="80" height="80" />
 
             </div>
 
-            {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
               <Image src={KlasImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400" width="100" height="100" />
 
             </div>
 
-            {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
               <Image src={PatrisDevImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400" width="124" height="124" />
 
             </div>
 
-            {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto col-start-2 col-end-4">
               <Image src={TulungagungImage} alt="Testimonial 01" className="max-w-full fill-current grayscale text-gray-400" width="124" height="124" />
 
             </div>
 
-          </div>
+          </div> */}
 
           {/* Testimonials */}
           {/* <div className='mt-20'>

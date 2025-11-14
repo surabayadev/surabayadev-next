@@ -8,6 +8,7 @@ import Seo from '@/components/Seo';
 import Testimonials from '@/components/Testimonials';
 
 import { Event } from '@/types/event';
+import Anniversary11 from '@/components/Anniversary11';
 
 
 export async function getStaticProps() {
@@ -37,7 +38,8 @@ export default function HomePage({ posts }: { posts: Event[] }) {
 
       <Hero />
       <Features />
-      <FeaturesBlocks posts={posts} />
+      <br /><br />
+      <Anniversary11 />
       <Testimonials />
     </Layout>
   );
