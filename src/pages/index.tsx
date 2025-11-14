@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { ReactElement } from 'react';
 
 import Features from '@/components/Features';
 import FeaturesBlocks from '@/components/FeaturesBlocks';
@@ -9,7 +10,6 @@ import Testimonials from '@/components/Testimonials';
 
 import { Event } from '@/types/event';
 import Anniversary11 from '@/components/Anniversary11';
-
 
 export async function getStaticProps() {
   const API_URL = "https://www.eventbriteapi.com/v3/organizations/54649742978/events?order_by=start_desc";
@@ -25,17 +25,18 @@ export async function getStaticProps() {
     props: {
       posts,
     },
-    revalidate: 60 * 60, // Revalidate every hour
+    revalidate: 60 * 60,
   };
 }
 
+type HomePageProps = {
+  posts: Event[];
+};
 
-export default function HomePage({ posts }: { posts: Event[] }) {
+const HomePage: React.FC<HomePageProps> = ({ posts }) => {
   return (
     <Layout>
-      {/* <Seo templateTitle='Home' /> */}
       <Seo />
-
       <Hero />
       <Features />
       <br /><br />
@@ -43,4 +44,6 @@ export default function HomePage({ posts }: { posts: Event[] }) {
       <Testimonials />
     </Layout>
   );
-}
+};
+
+export default HomePage;
